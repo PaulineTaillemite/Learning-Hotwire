@@ -1,4 +1,6 @@
+<%= turbo_frame_tag bait do %>
 <div class="bait">
+  <%= current_second %>
   <%= link_to image_tag(bait.image), bait %>
   <div class="name">
     <%= link_to bait.name, bait %>
@@ -17,4 +19,5 @@
       <%= button_to "Add", tackle_box_items_path(bait_id: bait) %>
     <% end %>
   <% end %>
-</div>
+  </div>
+<% end %>
